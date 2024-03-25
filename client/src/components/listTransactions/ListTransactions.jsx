@@ -35,7 +35,7 @@ const ListTransactions = ({ transactions }) => {
                   {truncate(transaction.description, 150)}
                 </td>
                 <td className="transaction_price">
-                  {transaction.price.toFixed(2)}
+                  &#8377;&nbsp;{transaction.price.toFixed(2)}
                 </td>
                 <td className="transaction_category">{transaction.category}</td>
                 <td className={transaction.sold ? "sold" : "not_sold"}>
