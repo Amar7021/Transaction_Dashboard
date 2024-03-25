@@ -1,0 +1,45 @@
+.table-container {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+    height: 40px;
+    line-height: 1.4;
+  }
+
+  th {
+    background-color: var(--secondary-bg-clr);
+  }
+
+  .transaction_category {
+    text-transform: capitalize;
+  }
+
+  .transaction_price {
+    font-weight: var(--fw-bold);
+  }
+
+  .sold {
+    color: red;
+  }
+
+  .not_sold {
+    color: green;
+  }
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}

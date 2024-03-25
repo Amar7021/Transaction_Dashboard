@@ -1,0 +1,101 @@
+.dashboard {
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+  .transaction_header {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--accent-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .transaction_heading {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  .select_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+
+    .search_label,
+    .select_label {
+      margin-right: 5px;
+      font-size: var(--fsize-reg);
+      color: var(--primary-txt-clr);
+    }
+
+    .search_box {
+      .search_input {
+        background-color: var(--secondary-bg-clr);
+        color: var(--primary-txt-clr);
+        font-size: var(--fsize-reg);
+        padding: 10px;
+        border-radius: var(--border-rd-sm);
+        width: 300px;
+        max-width: 350px;
+
+        &::placeholder {
+          color: var(--primary-txt-clr);
+          font-size: var(--fsize-reg);
+        }
+      }
+    }
+
+    .select_box {
+      .select_input {
+        background-color: var(--secondary-bg-clr);
+        font-size: var(--fsize-reg);
+        padding: 10px;
+        border-radius: var(--border-rd-sm);
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+
+    .display_pg_item,
+    .display_pg_no {
+      color: var(--primary-txt-clr);
+      font-weight: var(--fw-bold);
+      font-size: var(--fsize-reg);
+    }
+
+    .pagination {
+      display: flex;
+      gap: 10px;
+
+      .next_btn,
+      .prev_btn {
+        color: var(--secondary-txt-clr);
+        font-size: var(--fsize-sm);
+        background-color: var(--tertiary-bg-clr);
+        padding: 5px 8px;
+        border-radius: var(--border-rd-sm);
+        cursor: pointer;
+
+        &:disabled {
+          filter: opacity(0.5);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

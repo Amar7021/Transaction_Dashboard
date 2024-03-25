@@ -1,0 +1,25 @@
+.statistics-container {
+  background-color: var(--secondary-bg-clr);
+  border-radius: var(--border-rd-sm);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+
+  .statistics-heading {
+    font-size: var(--fsize-md);
+    font-weight: var(--fw-bold);
+    margin-bottom: 10px;
+  }
+
+  .statistics-item {
+    margin-bottom: 10px;
+
+    .statistics-label {
+      font-weight: var(--fw-bold);
+    }
+
+    .statistics-value {
+      margin-left: 10px;
+    }
+  }
+}
